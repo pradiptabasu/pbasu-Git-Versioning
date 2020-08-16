@@ -9,6 +9,12 @@
 
 * git lfs track	
 * git lfs track "**/*.pdb"	
+* git lfs track "*.zip"	
+* git lfs track "**/*.zip"	
+* git lfs track "**/**/*.zip"		
+* git lfs track "**/**/*.7z"	
+* git lfs track "**/*.7z"	
+* git lfs track "*.7z"	
 * git lfs track "**/*.7z"	
 * git lfs track "*.7z"	
 * git lfs track "**/mongod.pdb"	
@@ -22,9 +28,9 @@
 
 * git add .gitattributes
 
-* git lfs migrate info --everything --include=""**/*.pdb
-* git lfs migrate info --everything --include=""**/*.7z,*.7z,**/*.pdb,**/mongod.pdb,**/mongos.pdb,**/mongo.pdb,**/**/*.pdb,**/prometheus.exe,**/promtool.exe,**/grafana-server.exe,**/zipkin-server-2.12.9-exec.jar"
-* git lfs migrate import --everything --include=""**/*.7z,*.7z,**/*.pdb,**/mongod.pdb,**/mongos.pdb,**/mongo.pdb,**/**/*.pdb,**/prometheus.exe,**/promtool.exe,**/grafana-server.exe,**/zipkin-server-2.12.9-exec.jar" --verbose
+* git lfs migrate info --everything --include="**/*.pdb"
+* git lfs migrate info --everything --include="*.zip,**/*.zip,**/**/*.zip,**/**/*.7z,**/*.7z,*.7z,**/*.pdb,**/mongod.pdb,**/mongos.pdb,**/mongo.pdb,**/**/*.pdb,**/prometheus.exe,**/promtool.exe,**/grafana-server.exe,**/zipkin-server-2.12.9-exec.jar"
+* git lfs migrate import --everything --include="*.zip,**/*.zip,**/**/*.zip,**/**/*.7z**/*.7z,*.7z,**/*.pdb,**/mongod.pdb,**/mongos.pdb,**/mongo.pdb,**/**/*.pdb,**/prometheus.exe,**/promtool.exe,**/grafana-server.exe,**/zipkin-server-2.12.9-exec.jar" --verbose
 * git lfs migrate import --include="**/*.pdb" --include-ref=refs/heads/master
 
 * git lfs prune
@@ -33,6 +39,14 @@
 * https://git-lfs.github.com/
 * https://notiz.dev/blog/migrate-git-repo-to-git-lfs#2-setup-git-lfs-for-your-current-user-account
 * https://dev.to/jpamis/files-got-to-big-in-your-git-repo-git-lfs-to-the-rescue-29j9
+* https://www.atlassian.com/git/tutorials/git-lfs
+* https://stackoverflow.com/questions/35769330/git-lfs-track-folder-recursively
+* https://git-scm.com/docs/gitignore#_pattern_format
+* https://stackoverflow.com/questions/45533593/how-to-make-git-lfs-not-apply-to-a-subdirectory
+* 
+* 
+* 
+* 
 
 
 #  
