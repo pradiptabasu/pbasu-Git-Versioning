@@ -1,8 +1,43 @@
 # pbasu-Git-Versioning
 
 
-# https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
-# https://nvie.com/posts/a-successful-git-branching-model/?
+# Git Merge Rebase Stash
+
+# Git LFS
+* git lfs ls-files
+* git lfs status	
+
+* git lfs track	
+* git lfs track "**/*.pdb"	
+* git lfs track "**/*.7z"	
+* git lfs track "*.7z"	
+* git lfs track "**/mongod.pdb"	
+* git lfs track "**/mongos.pdb"	
+* git lfs track "**/mongo.pdb"	
+* git lfs track "**/**/*.pdb"	
+* git lfs track "**/prometheus.exe"	
+* git lfs track "**/promtool.exe"	
+* git lfs track "**/grafana-server.exe"	
+* git lfs track "**/zipkin-server-2.12.9-exec.jar"
+
+* git add .gitattributes
+
+* git lfs migrate info --everything --include=""**/*.pdb
+* git lfs migrate info --everything --include=""**/*.7z,*.7z,**/*.pdb,**/mongod.pdb,**/mongos.pdb,**/mongo.pdb,**/**/*.pdb,**/prometheus.exe,**/promtool.exe,**/grafana-server.exe,**/zipkin-server-2.12.9-exec.jar"
+* git lfs migrate import --everything --include=""**/*.7z,*.7z,**/*.pdb,**/mongod.pdb,**/mongos.pdb,**/mongo.pdb,**/**/*.pdb,**/prometheus.exe,**/promtool.exe,**/grafana-server.exe,**/zipkin-server-2.12.9-exec.jar" --verbose
+* git lfs migrate import --include="**/*.pdb" --include-ref=refs/heads/master
+
+* git lfs prune
+
+
+* https://git-lfs.github.com/
+* https://notiz.dev/blog/migrate-git-repo-to-git-lfs#2-setup-git-lfs-for-your-current-user-account
+* https://dev.to/jpamis/files-got-to-big-in-your-git-repo-git-lfs-to-the-rescue-29j9
+
+
+#  
+* https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+* https://nvie.com/posts/a-successful-git-branching-model/?
 
 * https://medium.com/@sairamkrish/git-branching-strategy-for-true-continuous-delivery-eade4435b57e
 * https://www.wearefine.com/mingle/env-branching-with-git/
@@ -21,4 +56,6 @@
 * https://flowcanon.com/software/choosing-the-best-git-branching-strategy-for-your-team/
 * https://medium.com/stakater/git-strategies-for-devops-774c4159c99d
 * https://medium.com/swlh/the-art-of-designing-gitlab-flow-for-a-team-project-76994b9df337
+
+
 
